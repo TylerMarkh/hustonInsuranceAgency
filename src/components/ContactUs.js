@@ -30,7 +30,6 @@ const ContactUs = () => {
         <FormControl
           name="contact"
           method="POST"
-          data-netlify="true"
           isRequired
           boxShadow="0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
           width={{ base: "90vw", md: "60vw", lg: "30vw" }}
