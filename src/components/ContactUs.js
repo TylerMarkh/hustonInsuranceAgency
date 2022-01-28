@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import React from "react";
 import {
   Text,
   Button,
@@ -12,13 +12,6 @@ import "@fontsource/libre-baskerville";
 import "@fontsource/source-sans-pro";
 
 const ContactUs = () => {
-  const [inputChange, setInputChange] = useState('')
-  const formHandler = (event) => event.preventDefault();
-  console.log("form submitted");
-  const handleInputChange = (event) => {let inputValue = event.target.value
-  setInputChange(inputValue) }
-
-
   return (
     <Box m="2vh">
       <Text
@@ -35,6 +28,9 @@ const ContactUs = () => {
       </Text>
       <Box width="100%" display="flex" justifyContent="center" pt="2vh">
         <FormControl
+          name="contact"
+          method="POST"
+          data-netlify="true"
           isRequired
           boxShadow="0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
           width={{ base: "90vw", md: "60vw", lg: "30vw" }}
@@ -42,16 +38,13 @@ const ContactUs = () => {
           p="2vh"
           borderRadius="2vh"
           mb="4vh"
-          onSubmit={formHandler}
         >
-          <FormLabel htmlFor="first-name" pt="1vh" borderRadius="2vh">
-            First name
+          <FormLabel htmlFor="name" pt="1vh" borderRadius="2vh">
+            Name
           </FormLabel>
-          <Input id="first-name" />
-          <FormLabel htmlFor="last-name" pt="1vh">
-            Last name
-          </FormLabel>
-          <Input id="last-name" />
+          <Input id="name" />
+          <FormLabel id="phone-number">Phone number</FormLabel>
+          <Input id="phone-number" type="number" />
           <FormLabel htmlFor="email" pt="1vh">
             Email address
           </FormLabel>
@@ -59,9 +52,9 @@ const ContactUs = () => {
           <FormLabel htmlFor="message" pt="1vh">
             Message
           </FormLabel>
-          <Textarea id="message" mb="1vh" inputChange={inputChange} onChange={handleInputChange}></Textarea>
+          <Textarea id="message" mb="1vh"></Textarea>
           <Button
-            type="button"
+            type="submit"
             mt="2vh"
             bgColor="rgba(43, 59, 43)"
             color="white"

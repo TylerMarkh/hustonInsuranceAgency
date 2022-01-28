@@ -14,33 +14,38 @@ const MainContent = () => {
         justifyContent="center"
       >
         <Text
+          margin={{base:"2vw", md:"4vw", lg:"2vw"}}
           textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
           fontSize={{ base: "3vh", lg: "5vh" }}
-          pt="15vh"
+          pt="10vh"
           pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
           pb={{ base: "0vh", md: "0vh", lg: "4vh" }}
           lineHeight="150%"
         >
-          Located in Ohio and Michigan, Huston Insurance Agency's mission is to
-          provide you with the facts about your Medicare Insurance. Our agents
-          will personally meet with you to discuss your needs, and with a decade
-          of experience, our lead agent will research the best options the
-          market has to offer.
+          Welcome to our family owned professional agency offering independent
+          licensed brokers specializing in Medicare Supplements & Advantage
+          Plans, Dental Insurance and Life Options, serving Ohio and Southeast
+          Michigan.
         </Text>
-
         <Text
-          width="90%"
-          textAlign={{ base: "center", lg: "left" }}
+          margin={{base:"2vw", md:"4vw", lg:"2vw"}}
+          textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
           fontSize={{ base: "3vh", lg: "5vh" }}
-          pt="2vh"
-          pl="4vh"
-          pb="15vh"
+          pt="5vh"
+          pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
+          pb={{ base: "10vh", md: "0vh", lg: "10vh" }}
           lineHeight="150%"
         >
-          Having an isurance agent will not only save you time, but will save
-          you money.
+          Whether you're turning 65 or searching to change your current Medicare
+          plan, with our knowledge of the rules and regulations we are here to
+          help make sense of it all, in addition offering peace of mind that our
+          services are at no cost. We are paid directly by the insurance
+          carrier. As independent brokers we represent all the major carriers,
+          working unbiased providing the lowest rates for your needs. Let us
+          save you time and money by showing you the right coverage and price
+          without obligation.
         </Text>
       </Box>
       <Box
