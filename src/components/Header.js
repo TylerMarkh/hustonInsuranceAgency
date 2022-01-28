@@ -48,7 +48,7 @@ const Header = () => {
             pb={{ base: "6vh", lg: "11vh" }}
             pl={{ base: "1vh", lg: "5vh" }}
             pr={{ base: "1vh", lg: "0vh" }}
-            pt={{ base: "63vh", md:"71vh", lg: "54vh" }}
+            pt={{ base: "60vh", md:"71vh", lg: "54vh" }}
           >
             <Text
               display="flex"
