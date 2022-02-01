@@ -17,14 +17,13 @@ const ContactUs = () => {
       <Text
         width="100%"
         textAlign={{ base: "center", lg: "center" }}
-        fontFamily="Source Sans Pro"
+        fontFamily="Libre bakersville"
         fontSize={{ base: "3vh", lg: "4vh" }}
         pt="4vh"
         pb="4vh"
         lineHeight="150%"
       >
-        Contact us using this form below, or you can find our contact
-        information on the bottom of the page.
+        Contact us using this form below.
       </Text>
       <Box width="100%" display="flex" justifyContent="center" pt="2vh">
         <FormControl

@@ -48,16 +48,18 @@ const Header = () => {
             pb={{ base: "6vh", lg: "11vh" }}
             pl={{ base: "1vh", lg: "5vh" }}
             pr={{ base: "1vh", lg: "0vh" }}
-            pt={{ base: "60vh", md:"71vh", lg: "54vh" }}
+            pt={{ base: "60vh", md: "71vh", lg: "54vh" }}
           >
             <Text
+              webkitAnimation="slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both"
+              animation="slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both"
               display="flex"
               textAlign="center"
               p="1vh"
               color="rgba(255,255, 255, 0.8)"
               width={{ base: "100%", lg: "87%" }}
               fontFamily="Libre Bakersville"
-              fontSize={{ base: "5.3vh", md:"4.6vh",lg: "9vh" }}
+              fontSize={{ base: "5.3vh", md: "4.6vh", lg: "9vh" }}
               lineHeight="100%"
             >
               We make Medicare Insurance easy.

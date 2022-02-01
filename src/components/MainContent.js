@@ -17,23 +17,22 @@ const MainContent = () => {
           margin={{base:"2vw", md:"4vw", lg:"2vw"}}
           textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
-          fontSize={{ base: "3vh", lg: "5vh" }}
+          fontSize={{ base: "3vh", lg: "4vh" }}
           pt="10vh"
           pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
           pb={{ base: "0vh", md: "0vh", lg: "4vh" }}
           lineHeight="150%"
         >
           Welcome to our family owned professional agency offering independent
-          licensed brokers specializing in Medicare Supplements & Advantage
-          Plans, Dental Insurance and Life Options, serving Ohio and Southeast
+          licensed brokers specializing in Medicare Supplements, Advantage
+          Plans, Dental Insurance, and Life Options. We serve Ohio and Southeast
           Michigan.
         </Text>
         <Text
           margin={{base:"2vw", md:"4vw", lg:"2vw"}}
           textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
-          fontSize={{ base: "3vh", lg: "5vh" }}
-          pt="5vh"
+          fontSize={{ base: "3vh", lg: "4vh" }}
           pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
           pb={{ base: "10vh", md: "0vh", lg: "10vh" }}
           lineHeight="150%"

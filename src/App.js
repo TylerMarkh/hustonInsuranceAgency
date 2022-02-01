@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 
 const App = () => {
   return (
-    <Box maxWidth="100%">
+    <Box width="100%" overflow="hidden">
       <Header />
       <MainContent />
       <ContactUs />
