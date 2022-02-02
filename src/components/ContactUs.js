@@ -96,7 +96,7 @@ const ContactUs = () => {
             </FormLabel>
             <Input
               id="phone-number"
-              type="number"
+              type="text"
               value={phone}
               onChange={handlePhoneChange}
             />
