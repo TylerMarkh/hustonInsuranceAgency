@@ -29,8 +29,24 @@ const ContactUs = () => {
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
   };
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, phone, email, message }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
     console.log("submitted");
     setName("");
     setPhone("");
