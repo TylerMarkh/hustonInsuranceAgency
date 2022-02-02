@@ -19,7 +19,7 @@ const Header = () => {
     <Box
       backgroundImage={backgroundImage}
       bgWidth="100%"
-      backgroundAttachment="fixed"
+      backgroundAttachment={{sm:"", md:"fixed", lg:"fixed"}}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
@@ -48,7 +48,7 @@ const Header = () => {
             pb={{ base: "6vh", lg: "11vh" }}
             pl={{ base: "1vw", lg: "2vw" }}
             pr={{ base: "1vw", lg: "0vw" }}
-            pt={{ base: "60vh", md: "71vh", lg: "50vh" }}
+            pt={{ base: "56vh", md: "71vh", lg: "54vh" }}
           >
             <Text
               display="flex"
