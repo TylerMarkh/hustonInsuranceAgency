@@ -28,7 +28,7 @@ const ContactUs = () => {
       <Box width="100%" display="flex" justifyContent="center" pt="2vh">
         <FormControl
           name="contact"
-          method="POST"
+          method="post"
           dataNetlify="true"
           isRequired
           boxShadow="0 4px 6px 0 hsla(0, 0%, 0%, 0.2)"
@@ -38,11 +38,12 @@ const ContactUs = () => {
           borderRadius="2vh"
           mb="4vh"
         >
+          <Input type="hidden" name="contract" value="contact" />
           <FormLabel htmlFor="name" pt="1vh" borderRadius="2vh">
             Name
           </FormLabel>
           <Input id="name" />
-          <FormLabel id="phone-number">Phone number</FormLabel>
+          <FormLabel id="phone-number" htmlFor="number">Phone number</FormLabel>
           <Input id="phone-number" type="number" />
           <FormLabel htmlFor="email" pt="1vh">
             Email address

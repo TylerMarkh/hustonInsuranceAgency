@@ -8,12 +8,17 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    
+
     <title>Huston Insurance Agency, Inc</title>
   </head>
   <body>
-    
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="number" name="number" />
+      <input type="email" name="email" />
+      <input type="message" name="message" />
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
-    
   </body>
 </html>
