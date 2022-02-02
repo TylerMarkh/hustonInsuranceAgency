@@ -8,18 +8,18 @@ const MainContent = () => {
   return (
     <Box>
       <Box
-        margin="2vh"
+        margin="2vw"
         display="flex"
         flexDirection="column"
         justifyContent="center"
       >
         <Text
-          margin={{base:"2vw", md:"4vw", lg:"2vw"}}
+          margin={{base:"2vw", md:"4vw", lg:"3vw"}}
           textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
           fontSize={{ base: "3vh", lg: "4vh" }}
           pt="10vh"
-          pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
+          pl={{ base: "0vw", md: "0vw", lg: "2vw" }}
           pb={{ base: "0vh", md: "0vh", lg: "4vh" }}
           lineHeight="150%"
         >
@@ -29,11 +29,11 @@ const MainContent = () => {
           Michigan.
         </Text>
         <Text
-          margin={{base:"2vw", md:"4vw", lg:"2vw"}}
+          margin={{base:"2vw", md:"4vw", lg:"3vw"}}
           textAlign={{ base: "center", md: "center", lg: "left" }}
           fontFamily="Source Sans Pro"
           fontSize={{ base: "3vh", lg: "4vh" }}
-          pl={{ base: "0vh", md: "0vh", lg: "4vh" }}
+          pl={{ base: "0vw", md: "0vw", lg: "2vw" }}
           pb={{ base: "10vh", md: "0vh", lg: "10vh" }}
           lineHeight="150%"
         >

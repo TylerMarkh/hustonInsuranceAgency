@@ -26,12 +26,12 @@ const Header = () => {
     >
       <Box bgGradient="linear(to-t, #00000088 20%, #ffffff44 80%)">
         <Box display="flex" alignItems="center" justifyContent="space-between">
-          <Box p={{ base: "2vh", lg: "4vh 0vh 2vh 4vh" }}>
+          <Box p={{ base: "2vw", lg: "4vh 0vh 2vh 4vh" }}>
             <Icon />
           </Box>
           <Menu>
             <MenuButton
-              mr={{ base: "4vh", lg: "6vh" }}
+              mr={{ base: "4vw", lg: "6vw" }}
               color="white"
               as={IconButton}
               aria-label="Options"
@@ -46,13 +46,11 @@ const Header = () => {
         <Box>
           <Box
             pb={{ base: "6vh", lg: "11vh" }}
-            pl={{ base: "1vh", lg: "5vh" }}
-            pr={{ base: "1vh", lg: "0vh" }}
-            pt={{ base: "60vh", md: "71vh", lg: "54vh" }}
+            pl={{ base: "1vw", lg: "2vw" }}
+            pr={{ base: "1vw", lg: "0vw" }}
+            pt={{ base: "60vh", md: "71vh", lg: "50vh" }}
           >
             <Text
-              webkitAnimation="slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both"
-              animation="slide-in-blurred-left 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both"
               display="flex"
               textAlign="center"
               p="1vh"

@@ -13,7 +13,7 @@ import "@fontsource/source-sans-pro";
 
 const ContactUs = () => {
   return (
-    <Box m="2vh">
+    <Box m="2vw">
       <Text
         width="100%"
         textAlign={{ base: "center", lg: "center" }}
