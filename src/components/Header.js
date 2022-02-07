@@ -15,11 +15,19 @@ import "@fontsource/libre-baskerville";
 import "@fontsource/source-sans-pro";
 
 const Header = () => {
+  const contactUsHandler = () => {
+    window.scrollTo({
+      top: 4000,
+      behavior: "smooth",
+    });
+    console.log("button pressed");
+  };
+
   return (
     <Box
       backgroundImage={backgroundImage}
       bgWidth="100%"
-      backgroundAttachment={{sm:"", md:"fixed", lg:"fixed"}}
+      backgroundAttachment={{ sm: "", md: "fixed", lg: "fixed" }}
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
@@ -39,7 +47,9 @@ const Header = () => {
               variant="outline"
             />
             <MenuList>
-              <MenuItem fontFamily="Source Sans Pro">Contact Us</MenuItem>
+              <MenuItem fontFamily="Source Sans Pro" onClick={contactUsHandler}>
+                Contact Us
+              </MenuItem>
             </MenuList>
           </Menu>
         </Box>
